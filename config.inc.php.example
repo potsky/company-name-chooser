@@ -1,0 +1,14 @@
+<?php
+// The minimum length of the domain name.without any extension
+$minSize = 6;
+
+// Extensions
+$extensions = ['com','eu','fr'];
+
+$tokens = [
+    'Jo',
+    'hn',
+    'Doe',
+    'Foo',
+    'Bar',
+];
