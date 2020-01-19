@@ -31,7 +31,7 @@ foreach ($result as $name) {
     foreach ($extensions as $extension) {
         $return = -1;
         $dumb = [];
-        exec('whois '.$name.'.'.$extension.' | grep "No match for domain"', $dumb, $return);
+        exec('whois '.$name.'.'.$extension.' | grep -e "No match for domain" -e "No entries found"', $dumb, $return);
 
         echo ($return === 0) ? 'Available' : '-';
         echo ';';
