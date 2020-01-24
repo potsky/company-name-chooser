@@ -1,6 +1,6 @@
 # Company Name Chooser
 
-Set syllable of all cofounders and let this script check if a  domain exists with a combinaison of them.
+This is a company name generator which checks for available domain names according to rules.
 
 ## Requirements
 
@@ -17,8 +17,16 @@ You need :
 
 ## Run
 
+Run one of script below and copy paste in your favorite spreadsheet 🚀
+
+### Generate a name according to syllables
+
 ```
-php script.php
+php syllable.php > syllables.csv
 ```
 
-Then copy paste in your favorite spreadsheet 🚀
+### Generate a name according to a 5 characters palindrome
+
+```
+php palindrome.php > syllables.csv
+```

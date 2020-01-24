@@ -1,14 +1,54 @@
 <?php
-// The minimum length of the domain name.without any extension
-$minSize = 6;
+// The minimum length of the domain name.
+$minSize = 3;
+
+// The maximum length of the domain name.
+$maxSize = 8;
 
 // Extensions
-$extensions = ['com','eu','fr'];
+$extensions = ['com','fr'];
 
+// -------------------------------------------
+// For syllable.php script
+//
 $tokens = [
-    'Jo',
-    'hn',
-    'Doe',
+    '',
     'Foo',
     'Bar',
+    'Pimp',
+];
+
+// -------------------------------------------
+// For palindrome.php script
+//
+$consonnes = [
+    'b',
+    'c',
+    'd',
+    'f',
+    'g',
+    'h',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'v',
+    'w',
+    'x',
+    'z',
+];
+
+$voyelles = [
+    'a',
+    'e',
+    'i',
+    'o',
+    'u',
+    'y',
 ];

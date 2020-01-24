@@ -7,7 +7,7 @@ foreach ($tokens as $token1) {
     foreach ($tokens as $token2) {
         foreach ($tokens as $token3) {
             $name = ucfirst($token1).ucfirst($token2).ucfirst($token3);
-            if (strlen($name) > $minSize) {
+            if ((strlen($name) >= $minSize) && (strlen($name) <= $maxSize)) {
                 $result[] = $name;
             }
         }
